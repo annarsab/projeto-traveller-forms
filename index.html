@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Inclusão de Dados</title>
+</head>
+<body>
+    <div class="content">
+        <h1>Cadastro de Pontos Turísticos</h1>
+        <br>
+        <form action="" method="POST" id="dados" name="dados">
+            <div class="nome__local">
+                <p>
+                    <label for="nome">Nome do local</label>
+                    <input type="text" id="nome" autofocus required placeholder="Inserir nome do ponto turístico">
+                </p>
+            </div>
+            <div class="endereco__local1">
+                <p>
+                    <label for="endereco">Endereço, número, bairro, complemento</label>
+                    <input type="text" id="endereco" autofocus required
+                        placeholder="Inserir endereço do ponto turístico">
+                </p>
+                <p>
+                    <label for="CEP">CEP</label>
+                    <input type="text" id="CEP" autofocus required placeholder="Inserir CEP">
+                </p>
+                <a class="buscacep" href="https://buscacepinter.correios.com.br/app/endereco/index.php?t"
+                    target="_blank">Não sabe o
+                    CEP?</a>
+            </div>
+            <div class="endereco__local2">
+                <p>
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" autofocus required placeholder="Inserir Cidade">
+                </p>
+                <p>
+                    <label for="">UF</label>
+                    <select name="" id="uf">
+                        <option value="0" disabled selected>UF</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                        <option value="EX">Estrangeiro</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="pais">País</label>
+                    <input type="text" id="pais" autofocus required placeholder="Inserir País">
+                </p>
+                <p>
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone" autofocus placeholder="Inserir telefone do local">
+                </p>
+            </div>
+            <div class="horario__local">
+                <p class="horario">
+                    <label for="hora">Horário de Funcionamento das</label>
+                    <input type="time" id="hora"> às <input type="time" id="hora">
+                </p>
+                <p class="dias">
+                    <input type="checkbox" name="" id="segunda" required>
+                    <label for="segunda">Segunda-feira</label>
+                    <input type="checkbox" name="" id="terca" required>
+                    <label for="terca">Terça-feira</label>
+                    <input type="checkbox" name="" id="quarta" required>
+                    <label for="quarta">Quarta-feira</label>
+                    <input type="checkbox" name="" id="quinta" required>
+                    <label for="quinta">Quinta-feira</label>
+                    <input type="checkbox" name="" id="sexta" required>
+                    <label for="sexta">Sexta-feira</label>
+                    <input type="checkbox" name="" id="sabado" required>
+                    <label for="sabado">Sábado</label>
+                    <input type="checkbox" name="" id="domingo" required>
+                    <label for="domingo">Domingo</label>
+                </p>
+            </div>
+            <div class="estacionamento__local">
+                <p>
+                    <label for="">Estacionamento no local?</label>
+                    <input type="radio" name="estacionamento" id="sim1" checked> <label for="sim1">Sim</label>
+                    <input type="radio" name="estacionamento" id="nao1"> <label for="nao1">Não</label>
+                </p>
+            </div>
+            <div class="restaurante__local">
+                <p>
+                    <label for="">Restaurante no local?</label>
+                    <input type="radio" name="restaurante" id="sim2" checked> <label for="sim2">Sim</label>
+                    <input type="radio" name="restaurante" id="nao2"> <label for="nao2">Não</label>
+                </p>
+            </div>
+            <div class="ingresso__local">
+                <p>
+                    <label for="">Ingressos</label>
+                    <input type="radio" name="ingresso" id="gratis" checked> <label for="sim">Grátis</label>
+                    <input type="radio" name="ingresso" id="pago"> <label for="nao">Pago</label>
+                </p>
+                <p class="preco">
+                    <label for="valor">Valor R$</label>
+                    <input type="number" id="valor">
+                </p>
+            </div>
+            <div class="url__local">
+                <p>
+                    <label for="site">Site do local</label>
+                    <input type="url" id="site">
+                </p>
+            </div>
+            <div class="imagem__local">
+                <label for="foto">Upload de imagem</label>
+                <input type="file" id="foto">
+            </div>
+            <div class="descricao__local">
+                <p class="mensagem__local">
+                    <label for="mensagem">Descrição</label>
+                </p>
+                <p>
+                    <textarea id="mensagem" required placeholder="Descreva o ponto turístico..." maxlength="200"
+                        minlength="5" cols="35" rows="8" disabled></textarea>
+                </p>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

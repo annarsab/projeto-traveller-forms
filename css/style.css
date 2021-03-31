@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #95aaad;
+    color: #0E2440;
+    display: center;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+.content {
+    width: 700px;
+    height: 800px;
+    background: #4bc3f28e;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.199);
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    text-align: center;
+    color: #4BC3F2;
+    background: #0E2440;
+    height: 50px;
+    border-radius: 20px 20px 0 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.nome__local label {
+    margin-left: 10px;
+}
+
+.nome__local input {
+    width: 500px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.endereco__local1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.endereco__local1 label {
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.endereco__local1 input {
+    width: 500px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#CEP {
+    width: 100px;
+    height: 30px;
+}
+
+.buscacep {
+    margin-top: -5px;
+    margin-left: 600px;
+}
+
+.endereco__local2,
+select {
+    display: flex;
+    margin-top: -15px;
+}
+
+.endereco__local2 label {
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.endereco__local2 input {
+    width: 200px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+select {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 50px;
+    height: 30px;
+    background: #DBDFE1;
+    font-weight: 400;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.horario__local {
+    margin-top: -5px;
+    margin-left: 8px;
+    justify-content: space-around;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.horario__local {
+    text-align: center;
+}
+
+.horario__local input {
+    background: #DBDFE1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.dias {
+    margin-top: 7px;
+    margin-left: -8px;
+    font-size: 14px;
+}
+
+.estacionamento__local,
+.restaurante__local,
+.ingresso__local,
+.url__local {
+    padding: 5px 10px 8px 10px;
+    box-sizing: border-box;
+}
+
+#sim1,
+#nao1,
+#sim2,
+#nao2,
+#gratis,
+#pago {
+    margin-left: 15px;
+}
+
+.preco {
+    margin-top: 5px;
+    margin-left: 220px;
+}
+
+.preco input {
+    width: 70px;
+}
+
+.url__local label {
+    margin-right: 5px;
+}
+
+.url__local input {
+    width: 500px;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.descricao__local label {
+    margin-left: 10px;
+}
+
+.imagem__local {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.imagem__local input {
+    margin-left: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mensagem__local {
+    margin-top: 5px;
+    margin-bottom: ;
+}
+
+textarea {
+    width: 500px;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 100px;
+}
+
+input,
+textarea {
+    background: #DBDFE1;
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: 10px;
+    color: #0E2440;
+}
+
+a:hover {
+    color: #3a3d3d;
+    cursor: pointer;
+}
+
+button {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 1px rgba (0, 0, 0, 0.5);
+    margin-top: 5px;
+    margin-left: 600px;
+    margin-bottom: 2px;
+    background: #0E2440;
+    border: 0;
+    color: #4BC3F2;
+    padding: 0.2em 0.7em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0e24408a;
+    color: #0E2440;
+    cursor: pointer;
+}
