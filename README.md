@@ -4,5 +4,5 @@
 Formulário desenvolvido para cadastro de pontos turísticos.
 </p>
 <p>
-(Atividade da FIAP)
+(Atividade de HTML5 e CSS realizado para a faculdade FIAP)
 </p>
